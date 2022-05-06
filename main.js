@@ -25,7 +25,7 @@ const mns = document.getElementById('mns');
 const API_KEY = '44026197d7fd01eb7a4d6c601245cfc9';
 
 let WEA = `https://api.openweathermap.org/data/2.5/weather?lat=`;
-let GEO = `http://api.openweathermap.org/geo/1.0/direct?q=`;
+let GEO = `https://api.openweathermap.org/geo/1.0/direct?q=`;
 
 boton.addEventListener('click', ()=>{
     lugar = input.value;
