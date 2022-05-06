@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/Ester-Mendez.png" type="image/x-icon">
+
+    <!--Colores https://coolors.co/ffffff-000000-ec8b3a-cccccc-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Ester Méndez - PWA</title>
+</head>
+<body>
+
+    
+    <section id="screen">
+        <div id="elClima"> </div>
+
+        <div class="container">
+            <h1>El clima</h1>
+                <div>
+                    <h2 class="temp" id="temp">-</h2>
+                    <div class="c-time">
+                        <h2 class="name" id="ciudad">-</h2>
+                        <small>
+                            <span class="time"> <span id="hrs"></span> : <span id="mns"></span> </span> - <span class="date" id="day"> - </span>
+                        </small>
+                    </div>
+                    
+                    <div class="weather">
+                        <img src=""></img>
+                        <span class="condition" id="con"> - </span>
+                    </div>
+                </div>
+        </div>
+
+        <div class="panel">
+            <form id="form">
+                <input type="text" id="input" class="search" placeholder="Buscar ubicación...">
+                <a id="boton" class="submit"><img src="imgs/search.png" alt="buscar" width="64" height="64"></a>
+            </form>
+
+            <ul class="cities" id="lugares">
+                <li onclick="defP(this.innerHTML)" class="city">Atlanta</li>
+                <li onclick="defP(this.innerHTML)" class="city">Guatemala</li>
+                <li onclick="defP(this.innerHTML)" class="city">Rio de Janeiro</li>
+                <li onclick="defP(this.innerHTML)" class="city">Argentina</li>
+            </ul>
+
+            <ul class="details">
+                <h4>Detalles del clima</h4>
+
+                <li>
+                    <span>Temperatura Máxima</span>
+                    <span id="max">-</span>
+                </li>
+                <li>
+                    <span>Temperatura Minima</span>
+                    <span id="min">-</span>
+                </li>
+                <li>
+                    <span>Humedad</span>
+                    <span id="hum">-</span>
+                </li>
+                <li>
+                    <span>Sensación térmica</span>
+                    <span id="ths">-</span>
+                </li>
+                <li>
+                    <span>Presión atmosférica</span>
+                    <span id="atp">-</span>
+                </li>
+                <li>
+                    <span>Velocidad del viento</span>
+                    <span id="wis">-</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    
+<script src="main.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
